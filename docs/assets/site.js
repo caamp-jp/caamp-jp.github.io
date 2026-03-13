@@ -1,10 +1,30 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
+const mobileNavQuery = window.matchMedia("(max-width: 1040px)");
 
 if (navToggle && siteNav) {
+  const closeNav = () => {
+    siteNav.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+  };
+
   navToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (mobileNavQuery.matches) {
+        closeNav();
+      }
+    });
+  });
+
+  mobileNavQuery.addEventListener("change", (event) => {
+    if (!event.matches) {
+      closeNav();
+    }
   });
 }
 
