@@ -11,6 +11,17 @@
 
 ## クロール
 
+### 前提
+
+- Python 3
+- `beautifulsoup4`
+
+`beautifulsoup4` が未導入の場合は、以下で追加します。
+
+```bash
+python3 -m pip install beautifulsoup4
+```
+
 ```bash
 bash scripts/crawl_source_site.sh
 ```

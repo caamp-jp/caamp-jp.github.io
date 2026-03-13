@@ -8,8 +8,6 @@ from copy import deepcopy
 from pathlib import Path
 from textwrap import dedent
 
-from bs4 import BeautifulSoup
-
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_ROOT = ROOT / "site" / "caamp.jp"
@@ -963,6 +961,8 @@ def render_logo_strip(locale: str, current_dir: str) -> str:
 
 
 def parse_publications(locale: str) -> list[dict[str, object]]:
+    from bs4 import BeautifulSoup
+
     source = RAW_ROOT / ("publications/index.html" if locale == "jp" else "en/publications/index.html")
     soup = BeautifulSoup(source.read_text(encoding="utf-8", errors="ignore"), "html.parser")
     main = soup.find("main")
@@ -988,6 +988,8 @@ def merge_publications(jp_groups: list[dict[str, object]], en_groups: list[dict[
 
 
 def parse_news(locale: str) -> dict[str, list[dict[str, object]]]:
+    from bs4 import BeautifulSoup
+
     source = RAW_ROOT / ("news/index.html" if locale == "jp" else "en/news/index.html")
     soup = BeautifulSoup(source.read_text(encoding="utf-8", errors="ignore"), "html.parser")
     main = soup.find("main")
