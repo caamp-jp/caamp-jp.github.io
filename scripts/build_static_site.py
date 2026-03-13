@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_ROOT = ROOT / "site" / "caamp.jp"
-OUTPUT_ROOT = ROOT / "preview"
+OUTPUT_ROOT = ROOT / "docs"
 ASSETS_DIR = OUTPUT_ROOT / "assets"
 MEDIA_DIR = ASSETS_DIR / "media"
 DOCS_DIR = ASSETS_DIR / "docs"
