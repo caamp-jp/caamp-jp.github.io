@@ -457,14 +457,14 @@
           "title": "Primary Members",
           "members": [
             {
+              "name": "Alps Alpine Co., Ltd.",
+              "image": "media/about-primary-alps-en.png",
+              "href": "https://www.alpsalpine.com/j/"
+            },
+            {
               "name": "IBM Japan, Ltd.",
               "image": "media/about-primary-ibm-en.png",
               "href": "https://www.ibm.com/jp-ja"
-            },
-            {
-              "name": "Shimizu Corporation",
-              "image": "media/about-primary-shimizu-en.png",
-              "href": "https://www.shimz.co.jp/"
             },
             {
               "name": "OMRON Corporation",
@@ -472,9 +472,9 @@
               "href": "https://www.omron.co.jp/"
             },
             {
-              "name": "Alps Alpine Co., Ltd.",
-              "image": "media/about-primary-alps-en.png",
-              "href": "https://www.alpsalpine.com/j/"
+              "name": "Shimizu Corporation",
+              "image": "media/about-primary-shimizu-en.png",
+              "href": "https://www.shimz.co.jp/"
             }
           ]
         },
