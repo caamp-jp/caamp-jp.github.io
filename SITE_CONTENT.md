@@ -303,8 +303,8 @@
           "https://www.miraikan.jst.go.jp/"
         ],
         [
-          "産業技術総合研究所 人間拡張研究センター",
-          "https://unit.aist.go.jp/harc/"
+          "産業技術総合研究所 人間社会拡張研究部門",
+          "https://unit.aist.go.jp/rihsa/"
         ],
         [
           "HEROZ株式会社",
@@ -384,8 +384,8 @@
           "https://www.santen.co.jp/ja/"
         ],
         [
-          "National Institute of Advanced Industrial Science and Technology, Human Augmentation Research Center",
-          "https://unit.aist.go.jp/harc/en/index.html"
+          "Research Institute on Human and Societal Augmentation",
+          "https://unit.aist.go.jp/rihsa/en/"
         ]
       ]
     }
