@@ -1,15 +1,15 @@
 # caamp.jp
 
-このリポジトリは、`caamp.jp` の静的サイトを `docs/` 配下で管理するためのものです。通常運用では `SITE_CONTENT.md` を正本として更新し、そこから静的ページを再生成します。
+このリポジトリは、`caamp.jp` の静的サイトを `docs/` 配下で管理するためのものです。通常運用では `SITE_CONTENT.json` を正本として更新し、そこから静的ページを再生成します。
 
 ## 構成
 
 - `docs/`
   公開用の静的サイトです。日本語ページ、英語ページ、`assets/`、`.nojekyll` をこの配下で管理します。
-- `SITE_CONTENT.md`
-  現在の正本となる Markdown ファイルです。ページ本文、一覧データ、主要な UI 文言を保持します。
-- `scripts/build_site_from_markdown.py`
-  `SITE_CONTENT.md` を元に `docs/` を再生成するスクリプトです。
+- `SITE_CONTENT.json`
+  現在の正本となる JSON ファイルです。ページ本文、一覧データ、主要な UI 文言を保持します。
+- `scripts/build_site_from_json.py`
+  `SITE_CONTENT.json` を元に `docs/` を再生成するスクリプトです。
 - `scripts/serve_static_site.py`
   `docs/` をローカル HTTP サーバーで配信するスクリプトです。
 
@@ -24,15 +24,17 @@
 python3 -m pip install beautifulsoup4
 ```
 
-## Markdown からの再生成
+## JSON からの再生成
 
-移行後は `SITE_CONTENT.md` を編集し、以下で `docs/` を再生成します。
+移行後は `SITE_CONTENT.json` を編集し、以下で `docs/` を再生成します。
 
 ```bash
-python3 scripts/build_site_from_markdown.py
+python3 scripts/build_site_from_json.py
 ```
 
-このコマンドは `SITE_CONTENT.md` の内容を使って HTML を上書きします。アセットは既存の `docs/assets/` をそのまま利用します。
+このコマンドは `SITE_CONTENT.json` の内容を使って HTML を上書きします。アセットは既存の `docs/assets/` をそのまま利用します。
+
+`main` ブランチでは、`SITE_CONTENT.json`、`scripts/build_site_from_json.py`、`scripts/build_static_site.py` の変更が push されると GitHub Actions が `docs/` を再生成し、差分があれば自動で反映します。PR マージによる `main` 更新も対象です。
 
 ## ローカル確認
 
@@ -46,4 +48,4 @@ python3 scripts/serve_static_site.py
 
 ## 移行について
 
-移行期には、WordPress 管理だった `caamp.jp` を `site/caamp.jp` にクロールし、`scripts/build_static_site.py` で `docs/` とアセットの初期ベースラインを作成しました。以降は `SITE_CONTENT.md` を正本として運用し、移行専用の手順は [MIGRATION.md](/home/cabot/src/webpage/MIGRATION.md) に分離しています。
+移行期には、WordPress 管理だった `caamp.jp` を `site/caamp.jp` にクロールし、`scripts/build_static_site.py` で `docs/` とアセットの初期ベースラインを作成しました。以降は `SITE_CONTENT.json` を正本として運用し、移行専用の手順は [MIGRATION.md](/home/cabot/src/webpage/MIGRATION.md) に分離しています。

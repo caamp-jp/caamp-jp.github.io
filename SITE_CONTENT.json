@@ -1,23 +1,3 @@
-# Site Content Source
-
-このファイルは、移行後に `docs/` を再構成するための Markdown ベースの情報源です。
-
-## Workflow
-
-1. 現在の公開内容をこのファイルに反映する
-2. `scripts/build_site_from_markdown.py` で `SITE_CONTENT.md` から `docs/` を再生成する
-
-## Notes
-
-- 移行期のクロールと初期静的化は `MIGRATION.md` に分離している
-- `site/` は一時データであり、コミットしない
-- `docs/assets/` は移行後にリポジトリで管理する
-- ページ本文、一覧データ、主要な UI 文言は下記の JSON ブロックを正本とする
-
-## Site Data
-
-<!-- SITE_DATA:BEGIN -->
-```json
 {
   "site_settings": {
     "brand_alt": {
@@ -1434,5 +1414,3 @@
     ]
   }
 }
-```
-<!-- SITE_DATA:END -->
