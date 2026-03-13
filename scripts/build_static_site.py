@@ -22,8 +22,8 @@ DOCS_DIR = ASSETS_DIR / "docs"
 ROUTES = ["", "about", "technology", "related-work", "news", "publications", "contact"]
 SITE_SETTINGS = {
     "brand_alt": {
-        "jp": "AIスーツケース",
-        "en": "AIスーツケース",
+        "jp": "一般社団法人 次世代移動支援技術開発コンソーシアム",
+        "en": "Consortium for Advanced Assistive Mobility Platform",
     },
     "menu_label": {
         "jp": "Menu",
@@ -34,24 +34,40 @@ SITE_SETTINGS = {
         "jp": "Follow Us on X",
         "en": "Follow Us on X",
     },
+    "follow_aria_label": {
+        "jp": "AIスーツケース・コンソーシアムのXをフォロー",
+        "en": "Follow Consortium for Advanced Assistive Mobility Platform on X",
+    },
     "home_logos": [
         {
-            "alt": "Alps Alpine",
+            "name": {
+                "jp": "アルプスアルパイン株式会社",
+                "en": "Alps Alpine Co., Ltd.",
+            },
             "asset": "media/logo-alps.png",
             "href": "https://www.alpsalpine.com/j/",
         },
         {
-            "alt": "IBM",
+            "name": {
+                "jp": "日本アイ・ビー・エム株式会社",
+                "en": "IBM Japan, Ltd.",
+            },
             "asset": "media/logo-ibm.png",
             "href": "https://www.ibm.com/jp-ja",
         },
         {
-            "alt": "OMRON",
+            "name": {
+                "jp": "オムロン株式会社",
+                "en": "OMRON Corporation",
+            },
             "asset": "media/logo-omron.png",
             "href": "https://www.omron.co.jp/",
         },
         {
-            "alt": "Shimizu",
+            "name": {
+                "jp": "清水建設株式会社",
+                "en": "Shimizu Corporation",
+            },
             "asset": "media/logo-shimizu.png",
             "href": "https://www.shimz.co.jp/",
         },
@@ -242,14 +258,14 @@ HOME_CONTENT = {
         "eyebrow": "Go Beyond Our Dreams",
         "title": "AI Suitcase",
         "lede": "視覚障がい者の独立した移動や街歩きを支援する先進的なモビリティ・ソリューション。",
-        "hero_image_alt": "AI Suitcase moving through a public space",
+        "hero_image_alt": "公共空間を移動するAIスーツケース",
         "technology_label": "Our Technology",
         "intro_eyebrow": "Making Impossible Possible",
         "intro_title": "Consortium for Advanced Assistive Mobility Platform (CAAMP)",
         "intro_body": "一般社団法人 次世代移動支援技術開発コンソーシアム",
         "intro_cta": "About Us",
         "intro_image": "media/home-intro-jp.jpg",
-        "intro_image_alt": "CAAMP members and AI Suitcase field testing",
+        "intro_image_alt": "AIスーツケースの実証実験を行うCAAMPメンバー",
         "news_eyebrow": "We Update regularly!",
         "news_title": "What's New",
         "news_cta": "More News",
@@ -261,7 +277,7 @@ HOME_CONTENT = {
         "contact_body": "AI スーツケース・コンソーシアムでは、実験に参加していただけるユーザーや活用可能なデータを提供していただける企業からの連絡をお待ちしています。その他ご質問、取材等もお気軽にお問い合わせください。",
         "contact_cta": "Contact Us",
         "contact_image": "media/home-contact.jpg",
-        "contact_image_alt": "Demonstration scene with AI Suitcase users",
+        "contact_image_alt": "AIスーツケース利用者とのデモンストレーションの様子",
     },
     "en": {
         "eyebrow": "Go Beyond Our Dreams",
@@ -274,7 +290,7 @@ HOME_CONTENT = {
         "intro_body": "一般社団法人 次世代移動支援技術開発コンソーシアム",
         "intro_cta": "About Us",
         "intro_image": "media/home-intro-en.jpg",
-        "intro_image_alt": "CAAMP members and AI Suitcase field testing",
+        "intro_image_alt": "CAAMP members conducting an AI Suitcase field test",
         "news_eyebrow": "We Update regularly!",
         "news_title": "What's New",
         "news_cta": "More News",
@@ -286,7 +302,7 @@ HOME_CONTENT = {
         "contact_body": "We welcome feedback and questions from users, corporate communities and academia. Please feel free to drop in and let us know.",
         "contact_cta": "Contact Us",
         "contact_image": "media/home-contact.jpg",
-        "contact_image_alt": "Demonstration scene with AI Suitcase users",
+        "contact_image_alt": "AI Suitcase demonstration with users",
     },
 }
 
@@ -403,36 +419,42 @@ ABOUT_PAGE_DATA = {
                     "title": "触覚インターフェイス",
                     "image": "media/tech-tactile.png",
                     "sponsor_image": "media/about-tech-sponsor-alps-jp.png",
+                    "sponsor_name": "アルプスアルパイン株式会社",
                     "sponsor_href": "https://www.alpsalpine.com/j/",
                 },
                 {
                     "title": "画像認識",
                     "image": "media/tech-vision.png",
                     "sponsor_image": "media/about-tech-sponsor-omron-jp.png",
+                    "sponsor_name": "オムロン株式会社",
                     "sponsor_href": "https://www.omron.co.jp/",
                 },
                 {
                     "title": "対話AI・行動/環境認識・クラウド技術",
                     "image": "media/about-tech-dialogue.png",
                     "sponsor_image": "media/about-tech-sponsor-ibm-jp.png",
+                    "sponsor_name": "日本アイ・ビー・エム株式会社",
                     "sponsor_href": "https://www.ibm.com/jp-ja/about",
                 },
                 {
                     "title": "ロボット技術・測位/ナビゲーション",
                     "image": "media/tech-navigation.png",
                     "sponsor_image": "media/about-tech-sponsor-shimizu-jp.png",
+                    "sponsor_name": "清水建設株式会社",
                     "sponsor_href": "https://www.shimz.co.jp/",
                 },
                 {
                     "title": "モビリティサービス",
                     "image": "media/tech-mobility.png",
                     "sponsor_image": None,
+                    "sponsor_name": None,
                     "sponsor_href": None,
                 },
                 {
                     "title": "視覚障がい者支援技術",
                     "image": "media/tech-accessibility.png",
                     "sponsor_image": "media/about-tech-sponsor-cmu.png",
+                    "sponsor_name": "カーネギーメロン大学",
                     "sponsor_href": "https://www.cmu.edu/",
                 },
             ],
@@ -441,6 +463,7 @@ ABOUT_PAGE_DATA = {
             "title": "Any Questions?",
             "body": "AIスーツケース・コンソーシアムでは、実験に参加していただけるユーザーや活用可能なデータを提供していただける企業からの連絡をお待ちしています。その他ご質問、取材等もお気軽にお問い合わせください。",
             "label": "Contact Us",
+            "image_alt": "AIスーツケース利用者とのデモンストレーションの様子",
             "show_image": True,
         },
     },
@@ -564,36 +587,42 @@ ABOUT_PAGE_DATA = {
                     "title": "Tactile Interface",
                     "image": "media/tech-tactile.png",
                     "sponsor_image": "media/about-tech-sponsor-alps-en.png",
+                    "sponsor_name": "Alps Alpine Co., Ltd.",
                     "sponsor_href": "https://www.alpsalpine.com/j/",
                 },
                 {
                     "title": "Visual Recognition",
                     "image": "media/tech-vision.png",
                     "sponsor_image": "media/about-tech-sponsor-omron-en.png",
+                    "sponsor_name": "OMRON Corporation",
                     "sponsor_href": "https://www.omron.co.jp/",
                 },
                 {
                     "title": "Interactive AI, Behavior and Environment Recognition, Cloud",
                     "image": "media/about-tech-dialogue.png",
                     "sponsor_image": "media/about-tech-sponsor-ibm-en.png",
+                    "sponsor_name": "IBM Japan, Ltd.",
                     "sponsor_href": "https://www.ibm.com/jp-ja/about",
                 },
                 {
                     "title": "Robotics, Localization and Navigation",
                     "image": "media/tech-navigation.png",
                     "sponsor_image": "media/about-tech-sponsor-shimizu-en.png",
+                    "sponsor_name": "Shimizu Corporation",
                     "sponsor_href": "https://www.shimz.co.jp/",
                 },
                 {
                     "title": "Mobility Service",
                     "image": "media/tech-mobility.png",
                     "sponsor_image": None,
+                    "sponsor_name": None,
                     "sponsor_href": None,
                 },
                 {
                     "title": "Assistive Technologies for Visual Impairment",
                     "image": "media/tech-accessibility.png",
                     "sponsor_image": "media/about-tech-sponsor-cmu.png",
+                    "sponsor_name": "Carnegie Mellon University",
                     "sponsor_href": "https://www.cmu.edu/",
                 },
             ],
@@ -602,6 +631,7 @@ ABOUT_PAGE_DATA = {
             "title": "Any Questions?",
             "body": "We welcome feedback and questions from users, corporate communities and academia. Please feel free to drop in and let us know.",
             "label": "Contact Us",
+            "image_alt": "AI Suitcase demonstration with users",
             "show_image": True,
         },
     },
@@ -628,12 +658,12 @@ TECH_CONTENT = {
         ],
         "technology_title_html": "Our<br>Technology",
         "technology_cards": [
-            ("触覚インターフェイス", "media/tech-tactile.png", "media/about-tech-sponsor-alps-jp.png", "Alps Alpine", "https://www.alpsalpine.com/j/"),
-            ("画像認識", "media/tech-vision.png", "media/about-tech-sponsor-omron-jp.png", "OMRON", "https://www.omron.co.jp/"),
-            ("対話AI・行動/環境認識・クラウド技術", "media/tech-dialogue.png", "media/about-tech-sponsor-ibm-jp.png", "IBM", "https://www.ibm.com/jp-ja/about"),
-            ("ロボット技術・測位/ナビゲーション", "media/tech-navigation.png", "media/about-tech-sponsor-shimizu-jp.png", "Shimizu", "https://www.shimz.co.jp/"),
+            ("触覚インターフェイス", "media/tech-tactile.png", "media/about-tech-sponsor-alps-jp.png", "アルプスアルパイン株式会社", "https://www.alpsalpine.com/j/"),
+            ("画像認識", "media/tech-vision.png", "media/about-tech-sponsor-omron-jp.png", "オムロン株式会社", "https://www.omron.co.jp/"),
+            ("対話AI・行動/環境認識・クラウド技術", "media/tech-dialogue.png", "media/about-tech-sponsor-ibm-jp.png", "日本アイ・ビー・エム株式会社", "https://www.ibm.com/jp-ja/about"),
+            ("ロボット技術・測位/ナビゲーション", "media/tech-navigation.png", "media/about-tech-sponsor-shimizu-jp.png", "清水建設株式会社", "https://www.shimz.co.jp/"),
             ("モビリティサービス", "media/tech-mobility.png", None, None, None),
-            ("視覚障がい者支援技術", "media/tech-accessibility.png", "media/about-tech-sponsor-cmu.png", "Carnegie Mellon University", "https://www.cmu.edu/"),
+            ("視覚障がい者支援技術", "media/tech-accessibility.png", "media/about-tech-sponsor-cmu.png", "カーネギーメロン大学", "https://www.cmu.edu/"),
         ],
         "other_videos_title": "Other Videos",
         "other_videos": [
@@ -644,7 +674,7 @@ TECH_CONTENT = {
         "contact_body": "AIスーツケース・コンソーシアムでは実験に参加していただけるユーザーや活用可能なデータを提供していただける企業からの連絡をお待ちしています。その他ご質問、取材等もお気軽にお問い合わせください。",
         "contact_label": "Contact Us",
         "contact_image": "media/home-contact.jpg",
-        "contact_image_alt": "Demonstration scene with AI Suitcase users",
+        "contact_image_alt": "AIスーツケース利用者とのデモンストレーションの様子",
     },
     "en": {
         "page_title": "Technology",
@@ -656,10 +686,10 @@ TECH_CONTENT = {
         "system_labels": [],
         "technology_title_html": "Our Technology",
         "technology_cards": [
-            ("Tactile Interface", "media/tech-tactile.png", "media/logo-alps.png", "Alps Alpine", "https://www.alpsalpine.com/j/"),
-            ("Visual Recognition", "media/tech-vision.png", "media/logo-omron.png", "OMRON", "https://www.omron.co.jp/"),
-            ("Interactive AI, Behavior and Environment Recognition, Cloud", "media/tech-dialogue.png", "media/logo-ibm.png", "IBM", "https://www.ibm.com/jp-ja/about"),
-            ("Robotics, Localization and Navigation", "media/tech-navigation.png", "media/logo-shimizu.png", "Shimizu", "https://www.shimz.co.jp/"),
+            ("Tactile Interface", "media/tech-tactile.png", "media/logo-alps.png", "Alps Alpine Co., Ltd.", "https://www.alpsalpine.com/j/"),
+            ("Visual Recognition", "media/tech-vision.png", "media/logo-omron.png", "OMRON Corporation", "https://www.omron.co.jp/"),
+            ("Interactive AI, Behavior and Environment Recognition, Cloud", "media/tech-dialogue.png", "media/logo-ibm.png", "IBM Japan, Ltd.", "https://www.ibm.com/jp-ja/about"),
+            ("Robotics, Localization and Navigation", "media/tech-navigation.png", "media/logo-shimizu.png", "Shimizu Corporation", "https://www.shimz.co.jp/"),
             ("Mobility Service", "media/tech-mobility.png", None, None, None),
             ("Assistive Technologies for Visual Impairment", "media/tech-accessibility.png", "media/about-tech-sponsor-cmu.png", "Carnegie Mellon University", "https://www.cmu.edu/"),
         ],
@@ -845,10 +875,10 @@ def render_footer_icon(name: str) -> str:
     )
 
 
-def render_footer_follow_link(href: str, label: str) -> str:
+def render_footer_follow_link(href: str, label: str, aria_label: str) -> str:
     return (
         f'<a class="footer-follow-link" href="{href}" target="_blank" rel="noreferrer"'
-        ' aria-label="Follow AI Suitcase on X">'
+        f' aria-label="{html.escape(aria_label)}">'
         f"{html.escape(label)}</a>"
     )
 
@@ -864,14 +894,16 @@ def render_footer(locale: str, current_dir: str, home_href: str, lang_switch_hre
     content = FOOTER_CONTENT[locale]
     follow_href = SITE_SETTINGS["follow_href"]
     follow_label = SITE_SETTINGS["follow_label"][locale]
+    follow_aria_label = SITE_SETTINGS["follow_aria_label"][locale]
     logo_href = asset_href(current_dir, content["logo"])
+    logo_alt = SITE_SETTINGS["brand_alt"][locale]
     top_action = (
         render_footer_language_link(lang_switch_label, lang_switch_href)
         if content["top_action"] == "language"
-        else render_footer_follow_link(follow_href, follow_label)
+        else render_footer_follow_link(follow_href, follow_label, follow_aria_label)
     )
     bottom_action = (
-        render_footer_follow_link(follow_href, follow_label)
+        render_footer_follow_link(follow_href, follow_label, follow_aria_label)
         if content["bottom_action"] == "follow"
         else render_footer_language_link(lang_switch_label, lang_switch_href)
     )
@@ -881,7 +913,7 @@ def render_footer(locale: str, current_dir: str, home_href: str, lang_switch_hre
           <div class="footer-shell">
             <div class="footer-row footer-row-top">
               <a class="footer-brand" href="{home_href}">
-                <img src="{logo_href}" alt="AI Suitcase" loading="lazy">
+                <img src="{logo_href}" alt="{html.escape(logo_alt)}" loading="lazy">
               </a>
               <div class="footer-row-action">
                 {top_action}
@@ -910,12 +942,12 @@ def render_section_divider_title(title_html: str) -> str:
     )
 
 
-def render_logo_strip(current_dir: str) -> str:
+def render_logo_strip(locale: str, current_dir: str) -> str:
     items = []
     for logo in SITE_SETTINGS["home_logos"]:
         items.append(
             f'<a class="logo-chip" href="{html.escape(logo["href"])}" target="_blank" rel="noreferrer">'
-            f'<img src="{asset_href(current_dir, logo["asset"])}" alt="{html.escape(logo["alt"])}" loading="lazy"></a>'
+            f'<img src="{asset_href(current_dir, logo["asset"])}" alt="{html.escape(logo["name"][locale])}" loading="lazy"></a>'
         )
     return '<div class="logo-strip">' + "".join(items) + "</div>"
 
@@ -1127,7 +1159,7 @@ def render_home(locale: str, current_dir: str) -> str:
             <h2>{html.escape(content["membership_title"])}</h2>
             <p>{html.escape(content["membership_body"])}</p>
           </div>
-          {render_logo_strip(current_dir)}
+          {render_logo_strip(locale, current_dir)}
         </section>
 
         <section class="section split-section reveal home-contact">
@@ -1218,12 +1250,13 @@ def render_about_tech_cards(cards_data: list[dict[str, str | None]], current_dir
     for card in cards_data:
         sponsor_html = ""
         sponsor = card["sponsor_image"]
+        sponsor_name = card["sponsor_name"]
         sponsor_href = card["sponsor_href"]
-        if sponsor and sponsor_href:
+        if sponsor and sponsor_href and sponsor_name:
             sponsor_html = (
                 '<a class="about-tech-sponsor"'
                 f' href="{html.escape(sponsor_href)}" target="_blank" rel="noreferrer">'
-                f'<img src="{asset_href(current_dir, sponsor)}" alt="" loading="lazy"></a>'
+                f'<img src="{asset_href(current_dir, sponsor)}" alt="{html.escape(sponsor_name)}" loading="lazy"></a>'
             )
         cards.append(
             '<article class="about-tech-card surface reveal">'
@@ -1294,7 +1327,7 @@ def render_about(locale: str, current_dir: str) -> str:
     if contact_cta["show_image"]:
         contact_media = (
             '<div class="split-media surface">'
-            f'<img src="{asset_href(current_dir, "media/home-contact.jpg")}" alt="Contact and field activity" loading="lazy"></div>'
+            f'<img src="{asset_href(current_dir, "media/home-contact.jpg")}" alt="{html.escape(contact_cta["image_alt"])}" loading="lazy"></div>'
         )
 
     return dedent(

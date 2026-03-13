@@ -21,8 +21,8 @@
 {
   "site_settings": {
     "brand_alt": {
-      "jp": "AIスーツケース",
-      "en": "AIスーツケース"
+      "jp": "一般社団法人 次世代移動支援技術開発コンソーシアム",
+      "en": "Consortium for Advanced Assistive Mobility Platform"
     },
     "menu_label": {
       "jp": "Menu",
@@ -33,24 +33,40 @@
       "jp": "Follow Us on X",
       "en": "Follow Us on X"
     },
+    "follow_aria_label": {
+      "jp": "AIスーツケース・コンソーシアムのXをフォロー",
+      "en": "Follow Consortium for Advanced Assistive Mobility Platform on X"
+    },
     "home_logos": [
       {
-        "alt": "Alps Alpine",
+        "name": {
+          "jp": "アルプスアルパイン株式会社",
+          "en": "Alps Alpine Co., Ltd."
+        },
         "asset": "media/logo-alps.png",
         "href": "https://www.alpsalpine.com/j/"
       },
       {
-        "alt": "IBM",
+        "name": {
+          "jp": "日本アイ・ビー・エム株式会社",
+          "en": "IBM Japan, Ltd."
+        },
         "asset": "media/logo-ibm.png",
         "href": "https://www.ibm.com/jp-ja"
       },
       {
-        "alt": "OMRON",
+        "name": {
+          "jp": "オムロン株式会社",
+          "en": "OMRON Corporation"
+        },
         "asset": "media/logo-omron.png",
         "href": "https://www.omron.co.jp/"
       },
       {
-        "alt": "Shimizu",
+        "name": {
+          "jp": "清水建設株式会社",
+          "en": "Shimizu Corporation"
+        },
         "asset": "media/logo-shimizu.png",
         "href": "https://www.shimz.co.jp/"
       }
@@ -187,14 +203,14 @@
       "eyebrow": "Go Beyond Our Dreams",
       "title": "AI Suitcase",
       "lede": "視覚障がい者の独立した移動や街歩きを支援する先進的なモビリティ・ソリューション。",
-      "hero_image_alt": "AI Suitcase moving through a public space",
+      "hero_image_alt": "公共空間を移動するAIスーツケース",
       "technology_label": "Our Technology",
       "intro_eyebrow": "Making Impossible Possible",
       "intro_title": "Consortium for Advanced Assistive Mobility Platform (CAAMP)",
       "intro_body": "一般社団法人 次世代移動支援技術開発コンソーシアム",
       "intro_cta": "About Us",
       "intro_image": "media/home-intro-jp.jpg",
-      "intro_image_alt": "CAAMP members and AI Suitcase field testing",
+      "intro_image_alt": "AIスーツケースの実証実験を行うCAAMPメンバー",
       "news_eyebrow": "We Update regularly!",
       "news_title": "What's New",
       "news_cta": "More News",
@@ -206,7 +222,7 @@
       "contact_body": "AI スーツケース・コンソーシアムでは、実験に参加していただけるユーザーや活用可能なデータを提供していただける企業からの連絡をお待ちしています。その他ご質問、取材等もお気軽にお問い合わせください。",
       "contact_cta": "Contact Us",
       "contact_image": "media/home-contact.jpg",
-      "contact_image_alt": "Demonstration scene with AI Suitcase users"
+      "contact_image_alt": "AIスーツケース利用者とのデモンストレーションの様子"
     },
     "en": {
       "eyebrow": "Go Beyond Our Dreams",
@@ -219,7 +235,7 @@
       "intro_body": "一般社団法人 次世代移動支援技術開発コンソーシアム",
       "intro_cta": "About Us",
       "intro_image": "media/home-intro-en.jpg",
-      "intro_image_alt": "CAAMP members and AI Suitcase field testing",
+      "intro_image_alt": "CAAMP members conducting an AI Suitcase field test",
       "news_eyebrow": "We Update regularly!",
       "news_title": "What's New",
       "news_cta": "More News",
@@ -231,7 +247,7 @@
       "contact_body": "We welcome feedback and questions from users, corporate communities and academia. Please feel free to drop in and let us know.",
       "contact_cta": "Contact Us",
       "contact_image": "media/home-contact.jpg",
-      "contact_image_alt": "Demonstration scene with AI Suitcase users"
+      "contact_image_alt": "AI Suitcase demonstration with users"
     }
   },
   "about_page_data": {
@@ -368,36 +384,42 @@
             "title": "触覚インターフェイス",
             "image": "media/tech-tactile.png",
             "sponsor_image": "media/about-tech-sponsor-alps-jp.png",
+            "sponsor_name": "アルプスアルパイン株式会社",
             "sponsor_href": "https://www.alpsalpine.com/j/"
           },
           {
             "title": "画像認識",
             "image": "media/tech-vision.png",
             "sponsor_image": "media/about-tech-sponsor-omron-jp.png",
+            "sponsor_name": "オムロン株式会社",
             "sponsor_href": "https://www.omron.co.jp/"
           },
           {
             "title": "対話AI・行動/環境認識・クラウド技術",
             "image": "media/about-tech-dialogue.png",
             "sponsor_image": "media/about-tech-sponsor-ibm-jp.png",
+            "sponsor_name": "日本アイ・ビー・エム株式会社",
             "sponsor_href": "https://www.ibm.com/jp-ja/about"
           },
           {
             "title": "ロボット技術・測位/ナビゲーション",
             "image": "media/tech-navigation.png",
             "sponsor_image": "media/about-tech-sponsor-shimizu-jp.png",
+            "sponsor_name": "清水建設株式会社",
             "sponsor_href": "https://www.shimz.co.jp/"
           },
           {
             "title": "モビリティサービス",
             "image": "media/tech-mobility.png",
             "sponsor_image": null,
+            "sponsor_name": null,
             "sponsor_href": null
           },
           {
             "title": "視覚障がい者支援技術",
             "image": "media/tech-accessibility.png",
             "sponsor_image": "media/about-tech-sponsor-cmu.png",
+            "sponsor_name": "カーネギーメロン大学",
             "sponsor_href": "https://www.cmu.edu/"
           }
         ]
@@ -406,6 +428,7 @@
         "title": "Any Questions?",
         "body": "AIスーツケース・コンソーシアムでは、実験に参加していただけるユーザーや活用可能なデータを提供していただける企業からの連絡をお待ちしています。その他ご質問、取材等もお気軽にお問い合わせください。",
         "label": "Contact Us",
+        "image_alt": "AIスーツケース利用者とのデモンストレーションの様子",
         "show_image": true
       }
     },
@@ -544,36 +567,42 @@
             "title": "Tactile Interface",
             "image": "media/tech-tactile.png",
             "sponsor_image": "media/about-tech-sponsor-alps-en.png",
+            "sponsor_name": "Alps Alpine Co., Ltd.",
             "sponsor_href": "https://www.alpsalpine.com/j/"
           },
           {
             "title": "Visual Recognition",
             "image": "media/tech-vision.png",
             "sponsor_image": "media/about-tech-sponsor-omron-en.png",
+            "sponsor_name": "OMRON Corporation",
             "sponsor_href": "https://www.omron.co.jp/"
           },
           {
             "title": "Interactive AI, Behavior and Environment Recognition, Cloud",
             "image": "media/about-tech-dialogue.png",
             "sponsor_image": "media/about-tech-sponsor-ibm-en.png",
+            "sponsor_name": "IBM Japan, Ltd.",
             "sponsor_href": "https://www.ibm.com/jp-ja/about"
           },
           {
             "title": "Robotics, Localization and Navigation",
             "image": "media/tech-navigation.png",
             "sponsor_image": "media/about-tech-sponsor-shimizu-en.png",
+            "sponsor_name": "Shimizu Corporation",
             "sponsor_href": "https://www.shimz.co.jp/"
           },
           {
             "title": "Mobility Service",
             "image": "media/tech-mobility.png",
             "sponsor_image": null,
+            "sponsor_name": null,
             "sponsor_href": null
           },
           {
             "title": "Assistive Technologies for Visual Impairment",
             "image": "media/tech-accessibility.png",
             "sponsor_image": "media/about-tech-sponsor-cmu.png",
+            "sponsor_name": "Carnegie Mellon University",
             "sponsor_href": "https://www.cmu.edu/"
           }
         ]
@@ -582,6 +611,7 @@
         "title": "Any Questions?",
         "body": "We welcome feedback and questions from users, corporate communities and academia. Please feel free to drop in and let us know.",
         "label": "Contact Us",
+        "image_alt": "AI Suitcase demonstration with users",
         "show_image": true
       }
     }
@@ -611,28 +641,28 @@
           "触覚インターフェイス",
           "media/tech-tactile.png",
           "media/about-tech-sponsor-alps-jp.png",
-          "Alps Alpine",
+          "アルプスアルパイン株式会社",
           "https://www.alpsalpine.com/j/"
         ],
         [
           "画像認識",
           "media/tech-vision.png",
           "media/about-tech-sponsor-omron-jp.png",
-          "OMRON",
+          "オムロン株式会社",
           "https://www.omron.co.jp/"
         ],
         [
           "対話AI・行動/環境認識・クラウド技術",
           "media/tech-dialogue.png",
           "media/about-tech-sponsor-ibm-jp.png",
-          "IBM",
+          "日本アイ・ビー・エム株式会社",
           "https://www.ibm.com/jp-ja/about"
         ],
         [
           "ロボット技術・測位/ナビゲーション",
           "media/tech-navigation.png",
           "media/about-tech-sponsor-shimizu-jp.png",
-          "Shimizu",
+          "清水建設株式会社",
           "https://www.shimz.co.jp/"
         ],
         [
@@ -646,7 +676,7 @@
           "視覚障がい者支援技術",
           "media/tech-accessibility.png",
           "media/about-tech-sponsor-cmu.png",
-          "Carnegie Mellon University",
+          "カーネギーメロン大学",
           "https://www.cmu.edu/"
         ]
       ],
@@ -665,7 +695,7 @@
       "contact_body": "AIスーツケース・コンソーシアムでは実験に参加していただけるユーザーや活用可能なデータを提供していただける企業からの連絡をお待ちしています。その他ご質問、取材等もお気軽にお問い合わせください。",
       "contact_label": "Contact Us",
       "contact_image": "media/home-contact.jpg",
-      "contact_image_alt": "Demonstration scene with AI Suitcase users"
+      "contact_image_alt": "AIスーツケース利用者とのデモンストレーションの様子"
     },
     "en": {
       "page_title": "Technology",
@@ -681,28 +711,28 @@
           "Tactile Interface",
           "media/tech-tactile.png",
           "media/logo-alps.png",
-          "Alps Alpine",
+          "Alps Alpine Co., Ltd.",
           "https://www.alpsalpine.com/j/"
         ],
         [
           "Visual Recognition",
           "media/tech-vision.png",
           "media/logo-omron.png",
-          "OMRON",
+          "OMRON Corporation",
           "https://www.omron.co.jp/"
         ],
         [
           "Interactive AI, Behavior and Environment Recognition, Cloud",
           "media/tech-dialogue.png",
           "media/logo-ibm.png",
-          "IBM",
+          "IBM Japan, Ltd.",
           "https://www.ibm.com/jp-ja/about"
         ],
         [
           "Robotics, Localization and Navigation",
           "media/tech-navigation.png",
           "media/logo-shimizu.png",
-          "Shimizu",
+          "Shimizu Corporation",
           "https://www.shimz.co.jp/"
         ],
         [
