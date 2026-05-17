@@ -1,0 +1,37 @@
+name: 編集リクエスト
+description: caamp.jp のページ編集依頼。できるだけ具体的に記入してください。
+title: "[編集リクエスト] "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: 対象言語
+      options:
+        - 日本語
+        - 英語
+        - 日英両方
+    validations:
+      required: true
+  - type: dropdown
+    id: page
+    attributes:
+      label: 対象ページ
+      options:
+        - トップ
+        - About
+        - Technology
+        - Related Work
+        - News
+        - Publications
+        - Contact
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 編集内容
+      description: 変更したい内容、元情報、リンク、素材、注意点をまとめて書いてください。
+    validations:
+      required: true

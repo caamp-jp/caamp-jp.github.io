@@ -4,7 +4,7 @@
 
 ## 更新の依頼について
 
-アクセス権のある方は [Issue (private)](https://github.com/caamp-jp/preview/issues) に更新の依頼を投稿してください。
+アクセス権のある方は [編集リクエストフォーム (private)](https://github.com/caamp-jp/preview/issues/new?template=edit-request.yml) に更新の依頼を投稿してください。
 
 アクセス権については [@daisukes](https://github.com/daisukes) までご連絡ください。
 
