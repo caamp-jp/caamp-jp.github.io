@@ -910,6 +910,32 @@
       "press_releases": [
         {
           "kind": "group",
+          "title": "2025年4月 大阪・関西万博での体験予約受付を開始",
+          "items": [
+            {
+              "text": "アルプスアルパイン株式会社",
+              "href": "https://www.alpsalpine.com/cms.media/aisuitecase_ja_20250411_ca4f2bf8b5.pdf"
+            },
+            {
+              "text": "オムロン株式会社",
+              "href": "https://www.omron.com/jp/ja/news/2025/04/c0411.html"
+            },
+            {
+              "text": "清水建設株式会社",
+              "href": "https://www.shimz.co.jp/company/about/news-release/2025/2025004.html"
+            },
+            {
+              "text": "日本アイ・ビー・エム株式会社",
+              "href": "https://jp.newsroom.ibm.com/2025-04-11-AI-suitcase-expo-2025-reservation"
+            },
+            {
+              "text": "日本科学未来館",
+              "href": "https://www.miraikan.jst.go.jp/news/press/202504113964.html"
+            }
+          ]
+        },
+        {
+          "kind": "group",
           "title": "2023年1月 活動延長",
           "items": [
             {
