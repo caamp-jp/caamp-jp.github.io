@@ -276,11 +276,6 @@
           "title": "正会員",
           "members": [
             {
-              "name": "アルプスアルパイン株式会社",
-              "image": "media/about-primary-alps-jp.png",
-              "href": "https://www.alpsalpine.com/j/"
-            },
-            {
               "name": "日本アイ・ビー・エム株式会社",
               "image": "media/about-primary-ibm-jp.png",
               "href": "https://www.ibm.com/jp-ja"
@@ -298,7 +293,14 @@
           ]
         },
         "associate": {
-          "title": "準会員"
+          "title": "準会員",
+          "members": [
+            {
+              "name": "アルプスアルパイン株式会社",
+              "image": "media/about-primary-alps-jp.png",
+              "href": "https://www.alpsalpine.com/j/"
+            }
+          ]
         },
         "distinguished": {
           "title": "特別会員",
@@ -306,7 +308,7 @@
             {
               "name": "浅川 智恵子",
               "role": "特別会員",
-              "org": "カーネギーメロン大学 / IBM Corporation",
+              "org": "カーネギーメロン大学 / 慶應大学 / 日本科学未来館",
               "image": "media/member-asakawa.jpg",
               "href": "https://researcher.watson.ibm.com/researcher/view.php?person=us-chiekoa"
             },
@@ -463,11 +465,6 @@
           "title": "Primary Members",
           "members": [
             {
-              "name": "Alps Alpine Co., Ltd.",
-              "image": "media/about-primary-alps-en.png",
-              "href": "https://www.alpsalpine.com/j/"
-            },
-            {
               "name": "IBM Japan, Ltd.",
               "image": "media/about-primary-ibm-en.png",
               "href": "https://www.ibm.com/jp-ja"
@@ -485,7 +482,14 @@
           ]
         },
         "associate": {
-          "title": "Associate Members"
+          "title": "Associate Members",
+          "members": [
+            {
+              "name": "Alps Alpine Co., Ltd.",
+              "image": "media/about-primary-alps-en.png",
+              "href": "https://www.alpsalpine.com/j/"
+            }
+          ]
         },
         "distinguished": {
           "title": "Distinguished Members",
@@ -493,7 +497,7 @@
             {
               "name": "Chieko Asakawa",
               "role": "Distinguished Member",
-              "org": "Carnegie Mellon University / IBM Corporation",
+              "org": "Carnegie Mellon University / Keio University / Miraikan",
               "image": "media/member-asakawa-en.jpg",
               "href": "https://researcher.watson.ibm.com/researcher/view.php?person=us-chiekoa"
             },

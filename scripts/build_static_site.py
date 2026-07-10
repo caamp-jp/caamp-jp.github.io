@@ -1368,6 +1368,12 @@ def render_about(locale: str, current_dir: str) -> str:
         )
 
     team_members = render_member_cards(team["board"]["members"], current_dir, locale, show_role=True)
+    associate_members = team["associate"].get("members", [])
+    associate_content = (
+        render_logo_panels(current_dir, associate_members)
+        if associate_members
+        else '<div class="about-empty reveal"></div>'
+    )
     distinguished_members = render_member_cards(
         team["distinguished"]["members"], current_dir, locale, show_role=False, compact=True
     )
@@ -1393,7 +1399,7 @@ def render_about(locale: str, current_dir: str) -> str:
           {render_about_rule(team["primary"]["title"])}
           {render_logo_panels(current_dir, team["primary"]["members"])}
           {render_about_rule(team["associate"]["title"])}
-          <div class="about-empty reveal"></div>
+          {associate_content}
           {render_about_rule(team["distinguished"]["title"])}
           <div class="about-member-grid about-member-grid-distinguished">
             {distinguished_members}

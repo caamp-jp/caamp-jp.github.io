@@ -642,7 +642,8 @@ ul {
 }
 
 .about-logo-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  justify-content: center;
 }
 
 .about-logo-panel {
@@ -1237,7 +1238,6 @@ ul {
   .card-grid-4,
   .metric-grid,
   .about-member-grid-board,
-  .about-logo-grid,
   .about-tech-grid,
   .about-mission-grid,
   .about-media-grid,
@@ -1304,7 +1304,6 @@ ul {
   .about-media-grid,
   .about-member-grid-board,
   .about-member-grid-distinguished,
-  .about-logo-grid,
   .about-tech-grid,
   .technology-card-grid,
   .technology-video-grid,
