@@ -236,7 +236,7 @@
     "jp": {
       "page_title": "About",
       "mission": {
-        "body": "一般社団法人 次世代移動支援技術開発コンソーシアム (通称 : AIスーツケース・コンソーシアム) は、視覚障がい者の実社会におけるアクセシビリティ (\"リアルワールド・アクセシビリティ\") と QOL 向上に資する、AI を活用した先進的移動支援技術の研究開発を行っています。",
+        "body": "一般社団法人 AIスーツケース・コンソーシアムは、視覚障がい者の実社会におけるアクセシビリティ (\"リアルワールド・アクセシビリティ\") と QOL 向上に資する、AI を活用した先進的移動支援技術の研究開発を行っています。",
         "media": {
           "type": "video"
         }
@@ -423,7 +423,7 @@
     "en": {
       "page_title": "About",
       "mission": {
-        "body": "Consortium for Advanced Assistive Mobility Platform (CAAMP, a.k.a. the AI Suitcase Consortium) is working to improve accessibility and quality of life for blind and visually impaired people through real-world deployment of assistive AI technologies.",
+        "body": "AI Suitcase Consortium is working to improve accessibility and quality of life for blind and visually impaired people through real-world deployment of assistive AI technologies.",
         "media": {
           "type": "video",
           "image": "media/about-mission-en.jpg",
