@@ -318,6 +318,12 @@
               "org": "カーネギーメロン大学",
               "image": "media/member-sato.png",
               "href": "https://www.ri.cmu.edu/ri-people/daisuke-sato/"
+            },
+            {
+              "name": "高木啓伸",
+              "role": "特別会員",
+              "org": "慶應大学 / 日本科学未来館",
+              "image": "media/member-takagi.jpg"
             }
           ]
         },
@@ -507,6 +513,12 @@
               "org": "Carnegie Mellon University",
               "image": "media/member-sato-en.jpg",
               "href": "https://www.ri.cmu.edu/ri-people/daisuke-sato/"
+            },
+            {
+              "name": "Hironobu Takagi",
+              "role": "Distinguished Member",
+              "org": "Keio University / Miraikan",
+              "image": "media/member-takagi.jpg"
             }
           ]
         },
